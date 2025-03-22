@@ -1,0 +1,279 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+.features-badge {
+    display: inline-block;
+    background-color: white;
+    color: #27ae60;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: none !important;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 28px;
+    color: #222;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: none !important; 
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #27ae60;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Stats Section */
+.stats {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 500px;
+    border-radius: 0;
+    box-shadow: none !important;
+    background: none;
+}
+
+/* Improved Text Box Styling */
+.text-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #222;
+    box-shadow: none !important;
+    text-align: left;
+    max-width: 320px;
+}
+
+/* Stats Section */
+.stats-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: none !important; 
+    max-width: 400px;
+}
+
+.stats-content p {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Bold Numbers with Colored Background */
+.stats-content strong {
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Different colors for different values */
+.stats-content .green { background: #27ae60; color: white; }
+.stats-content .black { background: black; color: white; }
+.stats-content .red { background: #e74c3c; color: white; }
+.stats-content .blue { background: #2980b9; color: white; }
+
+/* --- New Additions for Specific Stats --- */
+
+.stat-3x {
+    background-color: #28a745; 
+    color: black;
+    font-weight: bold; 
+    font-size: 2.5rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    text-align: left; 
+    width: 250px;
+    box-shadow: none !important; 
+}
+
+.stat-3x span {
+    font-weight: bold; 
+}
+
+.stat-3x p {
+    font-size: 1rem; 
+    font-weight: normal; 
+    margin-top: 5px; 
+}
+
+
+.stat-98 {
+    background-color: #333; 
+    color: white !important; 
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    text-align: left;
+    width: 250px;
+    box-shadow: none !important;
+}
+
+.stat-98 span {
+    color: white !important;  
+    font-weight: bold;
+}
+
+.stat-98 p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: white !important; 
+    margin-top: 5px;
+}
+
+
+.stat-18 {
+    background-color: #222; 
+    color: white !important; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 250px;
+    box-shadow: none !important;
+}
+
+
+.stat-18 p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: white !important;
+    text-align: left;
+    flex-grow: 1; 
+}
+
+.stat-18 span {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white !important;
+    margin-left: auto; 
+    text-align: right;
+}
+
+.stat-37 {
+    background-color: #e0e0e0 !important; 
+    color: #28a745 !important; 
+    font-weight: bold;
+    font-size: 2.5rem; 
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    text-align: left;
+    width: 250px;
+    box-shadow: none !important;
+    border: 1px solid #c0c0c0; 
+}
+
+.stat-37 p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #28a745 !important; 
+    margin-top: 5px;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .stats-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-content p {
+        font-size: 14px;
+    }
+
+    .text-box {
+        padding: 10px 15px;
+    }
+}
